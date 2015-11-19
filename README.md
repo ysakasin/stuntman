@@ -118,6 +118,6 @@ rake import_api
 
 `lib/stantman.rb`をロードすることで各モジュールを利用することもできる。しかし、ドキュメントは未整備であり、急な仕様変更が予想されるため推奨しない。
 
-## Lisence
+## License
 
-MIT Lisence
+MIT License
