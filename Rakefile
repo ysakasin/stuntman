@@ -66,5 +66,5 @@ end
 
 task :delete do
   Stuntman::Markov.delete_all
-  Stuntman::User.update_all(:since_id => 1)
+  Stuntman::User.all.update_all(:since_id => 1)
 end
