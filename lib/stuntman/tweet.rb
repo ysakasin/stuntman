@@ -42,13 +42,15 @@ module Stuntman
     end
 
     def concat(text)
-      n = text.match(/^[:alnum:]$/).present?
-      if @alphabet && n
+      if text_last.match(/[:almun:]/) && text[0].match(/[:almun:]/)
         @text = "#{@text} #{text}"
       else
         @text = "#{@text}#{text}"
       end
-      @alphabet = n
+    end
+
+    def text_last
+      @text[-1] || ''
     end
   end
 end
