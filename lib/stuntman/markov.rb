@@ -15,7 +15,7 @@ module Stuntman
       if tweet.retweet? ||
          tweet.urls? ||
          tweet.source.match(/twittbot.net/) ||
-         tweet.text.match(/(@[0-9A-Za-z_]+)|[BOTテスト]/) ||
+         tweet.text.match(/(@[0-9A-Za-z_]+)|[BOTテスト]|https*:\/\/|/) ||
          tweet.text.blank?
         return
       end
